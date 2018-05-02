@@ -25,6 +25,7 @@
 //    [self dispatch_barrier_async];
 //    [self dispatch_sync];
 //    [self dispatch_apply];
+//    [self dispatch_once];
     
 }
 //DISPATCH_QUEUE_SERIAL
@@ -174,6 +175,16 @@
     });
     NSLog(@"阻塞");
     //通过输出log，我们发现这个方法虽然会开启多个线程来遍历这个数组，但是在遍历完成之前会阻塞主线程。
+}
+- (void)dispatch_once{
+    //这个函数一般是用来做一个真的单例，也是非常常用的，在这里就举一个单例的例子吧：
+//    static SingletonTimer * instance;
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        instance = [[SingletonTimer alloc] init];
+//    });
+//
+//    return instance;
 }
 
 - (void)didReceiveMemoryWarning {
