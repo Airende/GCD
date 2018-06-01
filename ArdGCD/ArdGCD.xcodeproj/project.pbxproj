@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73837AEBD0CB18982D316EB0 /* libPods-ArdGCD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1FCF2F9B00AEAB26B6B55E /* libPods-ArdGCD.a */; };
 		90ADCB6E2099A2E200A6F717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ADCB6D2099A2E200A6F717 /* AppDelegate.m */; };
 		90ADCB742099A2E200A6F717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90ADCB722099A2E200A6F717 /* Main.storyboard */; };
 		90ADCB762099A2E300A6F717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90ADCB752099A2E300A6F717 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		732C9E7596235F7771AE751B /* Pods-ArdGCD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArdGCD.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArdGCD/Pods-ArdGCD.release.xcconfig"; sourceTree = "<group>"; };
 		90ADCB692099A2E200A6F717 /* ArdGCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArdGCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90ADCB6C2099A2E200A6F717 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		90ADCB6D2099A2E200A6F717 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +59,8 @@
 		90ADCBA22099A35E00A6F717 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		90ADCBA42099A37B00A6F717 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		90ADCBA52099A37B00A6F717 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		9F1FCF2F9B00AEAB26B6B55E /* libPods-ArdGCD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArdGCD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44F9A097824B9C0ACC74A97 /* Pods-ArdGCD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArdGCD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArdGCD/Pods-ArdGCD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73837AEBD0CB18982D316EB0 /* libPods-ArdGCD.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70B6F43B4D1BFB96CC221C24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F1FCF2F9B00AEAB26B6B55E /* libPods-ArdGCD.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		90ADCB602099A2E200A6F717 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,8 @@
 				90ADCB842099A2E400A6F717 /* ArdGCDTests */,
 				90ADCB8F2099A2E400A6F717 /* ArdGCDUITests */,
 				90ADCB6A2099A2E200A6F717 /* Products */,
+				EE2AE9BC26004C55101F2F3C /* Pods */,
+				70B6F43B4D1BFB96CC221C24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +157,15 @@
 			path = ArdGCDUITests;
 			sourceTree = "<group>";
 		};
+		EE2AE9BC26004C55101F2F3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C44F9A097824B9C0ACC74A97 /* Pods-ArdGCD.debug.xcconfig */,
+				732C9E7596235F7771AE751B /* Pods-ArdGCD.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90ADCB952099A2E400A6F717 /* Build configuration list for PBXNativeTarget "ArdGCD" */;
 			buildPhases = (
+				7D5D9594AC0E27B0581E79A8 /* [CP] Check Pods Manifest.lock */,
 				90ADCB652099A2E200A6F717 /* Sources */,
 				90ADCB662099A2E200A6F717 /* Frameworks */,
 				90ADCB672099A2E200A6F717 /* Resources */,
@@ -266,6 +291,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D5D9594AC0E27B0581E79A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArdGCD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		90ADCB652099A2E200A6F717 /* Sources */ = {
@@ -443,6 +489,7 @@
 		};
 		90ADCB962099A2E400A6F717 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44F9A097824B9C0ACC74A97 /* Pods-ArdGCD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -460,6 +507,7 @@
 		};
 		90ADCB972099A2E400A6F717 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 732C9E7596235F7771AE751B /* Pods-ArdGCD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
